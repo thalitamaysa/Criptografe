@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/img/iconecode.png">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <title>Criptografe</title>
+
+
+    
+</head>
+<body>
+    <main>
+        <h1>Escolha um metodo de criptografia</h1>
+        <form>
+            <div class="botoes">
+                <select name="metodos" id="metodo" >
+                    <option selected disabled>Selecione o método</option>
+                    <option value="cifraCesar" id="botao1">Cifra de César</option>
+                    <option value="base64" id="botao2">Base64</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <div class="textodaEscolha">
+                    <label for="text">
+                        Escreva sua mensagem: 
+                    </label>
+                    <textarea id="mensagem" name="msg" rows="5" cols="40"></textarea>
+                </div>
+            </div>
+                 <div id="sele">
+                    <span id="passos"></span>
+                 </div>                
+            <div class="btnCodDec">
+                
+                <label>
+                    <input type="radio" value="Codificar" checked="checked" name="tipoOP" id="codificar">
+                    Codifique
+                </label>
+                
+                <label>
+                    <input type="radio" value="Decodificar" name="tipoOP" id="decodificar">
+                    Decodifique
+                </label>
+
+               </div>
+                <button type="button" id="butCodDec">Codificar</button>
+               <div class="divSaida">
+                <textarea name="saida" id="saida" disabled=""></textarea>
+            </div>
+        </form>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

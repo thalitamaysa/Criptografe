@@ -1,0 +1,270 @@
+
+*{
+    padding: 0;
+    margin: 0;
+/* box-sizing: 0; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* Dando altura e largura fixa para o body e o html */
+html, body{
+width: 100%;
+height: 100%;
+
+
+}
+
+/* Ajustando meu body e colocando um fundo */
+body{
+    display: flex;
+    justify-content: center;
+    background: url(/assets/img/codigoazul.jpg);
+    background-size: 100%;
+    backdrop-filter: blur(2.8px) ;
+
+
+}
+
+/* Ajustando o corpo principal do HTML. */
+main{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background:#000406;
+    border-radius: 10px;
+    
+}
+
+/* Editando os forms e o deixando mais organizado */
+form{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(5,102,183,1) 98%, rgba(0,212,255,1) 100%);
+    border-radius: 20px;
+    
+    
+}
+
+/* Aqui estou editando onde o usuário irá inserir a mensagem */
+.textodaEscolha{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+  
+}
+
+.textodaEscolha span{
+    padding: 3px;
+}
+
+/* Aqui estou editando onde o usuário irá inserir a mensagem, porém a div toda. */
+#entrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px
+}
+
+/* Editando os botões */
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: black;
+    margin: 10px;
+}
+
+
+.botoes > label{
+    padding: 25px;
+}
+
+/* Esse são os botões em radio de codificar e decodificar */
+.btnCodDec{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.btnCodDec > label{
+    padding: 5px;
+}
+
+/* Aqui estou editando a caixa de saida da mensagem. */
+textarea{
+    height: 150px;
+    width: 400px;
+    margin: 5px;
+    border-radius: 30px;
+ 
+}  
+
+/* Esse é o botão que serve para codificar e decodificar. */
+#butCodDec {
+    width: 100px;
+    height: 20px;
+    
+}
+
+/* Display de seleção. */
+#sele {
+   display: flex;
+    
+}
+
+/* Incremento para a escolha de passos */
+#passos {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+   
+}
+ 
+
+.entrada {
+    justify-content: center;
+}
+
+/* Aqui utilizei para que houvesse responsividade no site todo. */
+@media screen {
+    html, body{
+        width: 100%;
+        height: 100%;
+        
+        
+        }
+        
+        /* Ajustando meu body e colocando um fundo */
+        body{
+            display: flex;
+            justify-content: center;
+            background: url(/assets/img/codigoazul.jpg);
+            background-size: 100%;
+            backdrop-filter: blur(2.8px) ;
+        
+        
+        }
+        
+        /* Ajustando o corpo principal do HTML. */
+        main{
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+        
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        
+        /* Editando os forms e o deixando mais organizado */
+        form{
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(5,102,183,1) 98%, rgba(0,212,255,1) 100%);
+            border-radius: 20px;
+            
+            
+        }
+        
+        /* Aqui estou editando onde o usuário irá inserir a mensagem */
+        .textodaEscolha{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 10px;
+            flex-direction: column;
+          
+        }
+        
+        .textodaEscolha span{
+            padding: 3px;
+        }
+        
+        /* Aqui estou editando onde o usuário irá inserir a mensagem, porém a div toda. */
+        #entrada {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 50px
+        }
+        
+        /* Editando os botões */
+        .botoes{
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            color: black;
+            margin: 10px;
+        }
+        
+        
+        .botoes > label{
+            padding: 25px;
+        }
+        
+        /* Esse é o botão que serve para codificar e decodificar. */
+        .btnCodDec{
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        .btnCodDec > label{
+            padding: 5px;
+        }
+        
+        /* Aqui estou editando a caixa de saida da mensagem. */
+        textarea{
+            height: 150px;
+            width: 400px;
+            margin: 5px;
+            border-radius: 30px;
+         
+        }  
+        
+        #butCodDec {
+            width: 100px;
+            height: 20px;
+            
+        }
+        
+        #sele {
+           display: flex;
+            
+        }
+        
+        #passos {
+            display: flex;
+            align-items: center;
+            padding: 2px;
+           
+        }
+         
+        
+        .entrada {
+            justify-content: center;
+        }
+    
+}
