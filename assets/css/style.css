@@ -20,7 +20,7 @@ height: 100%;
 body{
     display: flex;
     justify-content: center;
-    background: url(/assets/img/codigoazul.jpg);
+    background: url(./assets/img/codigoazul.jpg);
     background-size: 100%;
     backdrop-filter: blur(2.8px) ;
 
@@ -155,7 +155,7 @@ textarea{
         body{
             display: flex;
             justify-content: center;
-            background: url(/assets/img/codigoazul.jpg);
+            background: url(./assets/img/codigoazul.jpg);
             background-size: 100%;
             backdrop-filter: blur(2.8px) ;
         
